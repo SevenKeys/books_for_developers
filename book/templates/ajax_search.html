@@ -1,0 +1,13 @@
+{% if books.count > 0 %}
+
+<p>{{books.count}} was found</p>
+
+{% for book in books %}
+    <li><a href="{{ book.object.get_absolute_url }}">{{ book.object.title }}</a></li>
+{% endfor %}
+
+{% else %}
+
+<li>None to show!</li>
+
+{% endif %}

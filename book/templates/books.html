@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% csrf_token %}
+  <input type="text" class="form-control" id="search" placeholder="Search book">
+  <ul id="search_results">
+
+  </ul>
+{% if books.count > 0 %}
+<div class="container">
+      <!-- Row of columns -->
+    <div class="row">
+	  {% for book in books.object_list %}
+        <div class="col-md-4">
+          <h2>{{book.title}}</h2>
+          <p>{{book.description|truncatewords:"10"}}</p>
+          <p><a class="btn btn-default" href="{% url 'book' book.id %}" role="button">View details &raquo;</a></p>
+        </div>
+  {% endfor %}
+	</div>
+</div>
+{% else %}
+
+<p>No books have been added yet.</p>
+
+{% endif %}
+<p>
+	<a class="btn btn-success" href="{% url 'create' %}">Add a new book</a>
+</p>
+{% endblock %}
+
+{% block pagination %}
+
+<div class="pagination">
+  <ul class="pager">
+    {% if books.has_previous %}
+      <li><a href="?page={{books.previous_page_number}}" class="btn btn-primary">previous</a></li>
+    {% endif %}
+
+    <span class="current">
+        Page {{books.number}}of {{books.paginator.num_pages}}.
+    </span>
+    
+    {% if books.has_next %}
+      <li><a href="?page={{ books.next_page_number }}" class="btn btn-primary">Next</a></li>
+    {% endif %}
+  </ul>
+</div>
+
+{% endblock %}

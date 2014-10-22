@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{book.title}}</h1>
+	<span>{{book.author}}</span>
+	<p>
+		{% if book.thumbnail %}
+			<img src="/media/{{book.thumbnail}}" width="200">
+		{% endif %}
+		{{book.description}}
+    </p>
+	<p>
+		<a class="btn btn-warning" href="{% url 'edit' book.id %}">Edit book</a>
+		<a class="btn btn-danger" href="{% url 'delete' book.id %}">Delete book</a>
+	</p>
+	<!--Include paypal button-->
+	{% include "paypal.html" %}
+
+	<p>{{book.likes}} people likes this book</p>
+	<a href="{% url 'like' book.id %}">Like</a>
+<h2>Comments</h2>
+{% for com in book.comment_set.all %}
+	<p><strong>{{com.name}}:</strong> {{com.body}}</p>
+	<p>{{com.pub_date}}</p>
+	 <p><a href="{% url 'delete_comment' com.id %}" class="btn btn-danger btn-xs">Delete comment</a></p>
+{% endfor %}
+
+<p>
+	<a class="btn btn-primary" href="{% url 'add_com' book.id %}">Add comment</a>
+</p>
+
+{% endblock %}

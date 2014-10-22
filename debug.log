@@ -1,0 +1,452 @@
+Not Found: /acco
+Internal Server Error: /books/get/2/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in book
+    return render(request, 'book.html', args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 532, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 452, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'edit_book' with arguments '(2,)' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /books/get/2/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in book
+    return render(request, 'book.html', args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 155, in render
+    return self.render_template(self.template, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 137, in render_template
+    output = template.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 532, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 403, in _reverse_with_prefix
+    self._populate()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 290, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 315, in reverse_dict
+    self._populate()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 303, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/utils/functional.py", line 32, in wrapper
+    result = func(*args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 118, in get_callable
+    (lookup_view, mod_name))
+ViewDoesNotExist: Could not import book.views.delete. View does not exist in module book.views.
+Internal Server Error: /books/get/2/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in book
+    return render(request, 'book.html', args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 447, in render
+    six.reraise(*exc_info)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 433, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 532, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 452, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'edit' with arguments '(2,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['books/edit/$']
+Internal Server Error: /books/create/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 30, in create
+    form.save()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/forms/models.py", line 446, in save
+    construct=False)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/forms/models.py", line 80, in save_instance
+    " validate." % (opts.object_name, fail_message))
+ValueError: The Book could not be created because the data didn't validate.
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/search/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 105, in search_titles
+    books = SearchQuerySet().autocomplete(content_auto=request.POST.get('search_text',''))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/haystack/query.py", line 463, in autocomplete
+    return clone.filter(six.moves.reduce(operator.__and__, query_bits))
+TypeError: reduce() of empty sequence with no initial value
+Internal Server Error: /books/get/4/
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in book
+    return render(request, 'book.html', args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 162, in render_to_string
+    t = get_template(template_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 141, in get_template
+    template = get_template_from_string(template, origin, template_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 263, in do_include
+    isolated_context=isolated_context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 145, in __init__
+    t = get_template(template_path)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 131, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist:  paypal.html
+Not Found: /books/favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 99, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 339, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/utils/functional.py", line 32, in wrapper
+    result = func(*args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/dmitry/projects/it_book/book/views.py", line 4, in <module>
+    from django.core.paginator import Paginator, EmptyPage, PageNotInteger
+ImportError: cannot import name PageNotInteger
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 19, in books
+    return render(request, 'books.html', args)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 169, in render_to_string
+    return t.render(context_instance)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 264, in do_include
+    return IncludeNode(parser.compile_filter(bits[1]), extra_context=namemap,
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 360, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/template/base.py", line 577, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: 'list.html' from '""list.html'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in books
+    books = paginator.page(page)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/paginator.py", line 36, in validate_number
+    raise PageNotAnInteger('That page number is not an integer')
+PageNotAnInteger: That page number is not an integer
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 23, in books
+    books = paginator.page(page)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/paginator.py", line 36, in validate_number
+    raise PageNotAnInteger('That page number is not an integer')
+PageNotAnInteger: That page number is not an integer
+Not Found: /page
+Not Found: /page
+Not Found: /page
+Not Found: /page
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/dmitry/projects/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dmitry/projects/it_book/book/views.py", line 19, in books
+    page = int(request.GET.get('page'))
+TypeError: int() argument must be a string or a number, not 'NoneType'
+Not Found: /page

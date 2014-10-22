@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post" action="{% url 'add_com' book.id %}">{% csrf_token %}
+	{{form.as_p}}
+	<div>
+		<input class="btn btn-success" type="submit" name ="submit" value="Add comment">
+	</div><br>
+</form>
+
+{% endblock %}
