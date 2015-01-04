@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from models import Book, Comment
 from forms import BookForm, CommentForm
 from haystack.query import SearchQuerySet
+
 import logging
 logger = logging.getLogger(__name__)
 
